@@ -1,33 +1,40 @@
-.App {
-  text-align: center;
+#python-editor-container{
+  display:flex;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#python-editor-input{
+  width:50%;
+  height:99vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#python-code-editor{
+  height: 95%;
+  background-color: #f9f9f9;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#python-editor-input button{
+  height: 5%;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#python-editor-output{
+  width:50%;
+  height:99vh;
+}
+
+#python-editor-output textarea{
+  width: 100%;
+  height: 100%;
+  background-color: #2e1128;
+  font-weight: 600;
+  padding: 20px;
+  font-size: 1.5rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
